@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { useState } from "react";
 import {Link} from 'react-router-dom'
+// eslint-disable-next-line react/prop-types
 const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("Home");
 
@@ -42,7 +43,7 @@ const Navbar = ({setShowLogin}) => {
           <img src={assets.search_icon} alt="searchlogo" />
           <div className="nevbar-search-icon"></div>
           <div className="navbar-cart-icon">
-            <img src={assets.basket_icon} alt="cart" />
+          <Link to='/cart'><img src={assets.basket_icon} alt="cart" /></Link>  
             <div className="dot"></div>
           </div>
           <button onClick={()=>setShowLogin(true)} className="SignBTN">Sign in</button>
