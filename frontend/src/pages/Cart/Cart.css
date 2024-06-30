@@ -71,6 +71,7 @@
     background: transparent;
     border: none;
     outline: none;
+    width: 70%;
     padding-left: 10px;
 }
 .cart-promocode-input button{
